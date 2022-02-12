@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const SwitchContainer = styled.div<{ isOn: boolean }>`
   width: 60px;
   height: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #e3e3e3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -16,6 +16,7 @@ export const SwitchContainer = styled.div<{ isOn: boolean }>`
     props.isOn &&
     css`
       background-color: skyblue;
+      justify-content: flex-end;
     `}
 `;
 
